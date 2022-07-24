@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Well Wisher-SocialMedia Blocker",
+  "version": "0.1.1",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Content.js"]
+    }
+  ],
+  "icons": { "48": "icon1.png", "128": "icon1.png" },
+  "browser_action": {
+    "default_popup": "Popup.html",
+    "default_title": "Well Wisher-SocialMedia Blocker"
+  },
+  "permissions": [
+    "https://www.youtube.com/*",
+    "https://www.facebook.com/*",
+    "https://www.netflix.com/*",
+    "https://www.primevideo.com/*",
+    "https://www.instagram.com/*"
+
+  ]
+}
